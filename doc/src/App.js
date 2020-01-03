@@ -2,27 +2,73 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// function App() {
+ 
+//   const name = 'Farley Rufino'
+//   const element = <h1>Olá,{name}</h1>
 
+//   function formatName(user){
+
+//     return user.firstname + '' + user.lastname
+//   }
+
+//   const user = {
+//     firstname: 'Farley',
+//     lastname: 'Rufinão'
+//   }
+
+//   const elementDois = (
+//     <h1>
+//       Denovo,{formatName(user)}
+//     </h1>
+//   )
+
+//   function getGreeting(userP){
+
+//     if(userP){
+//     return <h1> Olá ,{userP}</h1>
+//     }
+//     return <h1>Olá, Estrangeiro</h1>
+//   }
+
+//   const paieFilho = (
+//     <div>
+//       <h1>Pai</h1>
+//       <h2>Filho</h2>
+//     </div>
+//   )
+
+//   const elementoTres = {
+//     type:'h1',
+//     props: {
+//       className: 'greeting',
+//       children: 'Hello, world!'
+//     }
+//   }
+
+//   function Welcome(props){
+//   return <h1>Hello,{props.name}</h1>
+//   }
+  
+//   const nome ={
+//     name: 'FAFA'
+//   }
+
+//   return (
+//     Welcome(nome)
+//   );
+// }
+
+class App extends React.Component {
+
+  
+  render(){
+    const props = {name:'teste'}
+    return(
+    <h1>Hello,{props.name}</h1>
+    )
+  }
+}
 export default App;
 
-//Pode Comecar
+// Parei aqui https://pt-br.reactjs.org/docs/components-and-props.html
